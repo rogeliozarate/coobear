@@ -1,3 +1,5 @@
+var reverse = require('ascii-art-reverse')
+
 var coolbear =
   "    ('-^-/')  \n" +
   "    `o__o' ]  \n" +
@@ -11,5 +13,5 @@ var coolbear =
 setInterval(function() { console.log(coolbear) }, 1000)
 
 setTimeout(function() {
-  setInterval(function() { console.log(coolbear) }, 1000)
+  setInterval(function() { console.log(reverse(coolbear)) }, 1000)
 }, 500)
